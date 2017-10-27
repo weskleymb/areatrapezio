@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AreaTrapezio.Views.MainPage">
+
+    <StackLayout Margin="16">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Altura" VerticalOptions="End" />
+            <Entry Keyboard="Numeric" 
+                Placeholder="Altura aqui..." 
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding Altura}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Base Maior" VerticalTextAlignment="End" />
+            <Entry  Keyboard="Numeric" 
+                Placeholder="Base Maior aqui..."
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding BaseMaior}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Base Menor" VerticalTextAlignment="End" />
+            <Entry  Keyboard="Numeric" 
+                Placeholder="Base Menor aqui..." 
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding BaseMenor}"/>
+        </StackLayout>
+        <Button Text="Calcular" Clicked="Button_Clicked" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Area" VerticalTextAlignment="End" />
+            <Entry  Keyboard="Numeric" 
+                Placeholder="Area aqui..." 
+                HorizontalOptions="FillAndExpand" 
+                Text="{Binding Area}"
+                IsEnabled="False"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

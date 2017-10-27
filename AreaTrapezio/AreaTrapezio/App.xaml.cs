@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using AreaTrapezio.Views;
 using Xamarin.Forms;
 
 namespace AreaTrapezio
@@ -13,7 +9,7 @@ namespace AreaTrapezio
         {
             InitializeComponent();
 
-            MainPage = new AreaTrapezio.MainPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
